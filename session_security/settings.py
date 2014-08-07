@@ -55,3 +55,5 @@ if not (expire_at_browser_close or force_insecurity):
     raise Exception(
         'Enable SESSION_EXPIRE_AT_BROWSER_CLOSE or SESSION_SECURITY_INSECURE'
     )
+
+UNSAVED_FORM_WARNING = getattr(settings, 'SESSION_SECURITY_UNSAVED_FORM_WARNING', True)
